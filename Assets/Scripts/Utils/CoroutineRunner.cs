@@ -11,7 +11,6 @@ namespace Utils
         private void Awake()
         {
             instance = this;
-            DontDestroyOnLoad(instance.gameObject);
         }
 
         public static Coroutine RunCoroutine(IEnumerator task)
