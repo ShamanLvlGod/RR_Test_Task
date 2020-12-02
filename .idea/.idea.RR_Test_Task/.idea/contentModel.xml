@@ -7,51 +7,66 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="ArcLayoutGroup.cs" t="Include" />
-          <e p="AttackCard.cs" t="Include" />
-          <e p="AttackView.cs" t="Include" />
-          <e p="BoardAttackController.cs" t="Include" />
-          <e p="BoardFightManager.cs" t="Include" />
-          <e p="Card.cs" t="Include" />
-          <e p="CardGenerator.cs" t="Include" />
-          <e p="CardView.cs" t="Include" />
-          <e p="CurvedLayout.cs" t="Include" />
-          <e p="DummyValueGenerator.cs" t="Include" />
-          <e p="GameResourceHandler.cs" t="Include" />
-          <e p="Hand.cs" t="Include" />
-          <e p="HandInstaller.cs" t="Include" />
-          <e p="HandVisualiser.cs" t="Include" />
-          <e p="HealthCalculator.cs" t="Include" />
-          <e p="IBoardFightManager.cs" t="Include" />
-          <e p="ICard.cs" t="Include" />
-          <e p="ICardGenerator.cs" t="Include" />
-          <e p="IChangeAttack.cs" t="Include" />
-          <e p="IGameResourceHandler.cs" t="Include" />
-          <e p="IHand.cs" t="Include" />
-          <e p="IHandInstaller.cs" t="Include" />
-          <e p="IHaveAttack.cs" t="Include" />
-          <e p="IHaveHealth.cs" t="Include" />
-          <e p="IHaveInfo.cs" t="Include" />
-          <e p="IHaveMana.cs" t="Include" />
-          <e p="IHaveResource.cs" t="Include" />
-          <e p="IHealthCalculator.cs" t="Include" />
-          <e p="ILoadCardValue.cs" t="Include" />
-          <e p="IResourceCacher.cs" t="Include" />
-          <e p="IResourceDownloader.cs" t="Include" />
-          <e p="ITextureAssetDownloader.cs" t="Include" />
-          <e p="ITextureCacher.cs" t="Include" />
-          <e p="ITextureLoader.cs" t="Include" />
-          <e p="Player.cs" t="Include" />
+          <e p="Gameplay" t="Include">
+            <e p="AttackCard.cs" t="Include" />
+            <e p="BoardActionsController.cs" t="Include" />
+            <e p="BoardDropManager.cs" t="Include" />
+            <e p="BoardFightManager.cs" t="Include" />
+            <e p="Card.cs" t="Include" />
+            <e p="CardDropVerifier.cs" t="Include" />
+            <e p="CardGenerator.cs" t="Include" />
+            <e p="DummyValueGenerator.cs" t="Include" />
+            <e p="GameResourceHandler.cs" t="Include" />
+            <e p="Hand.cs" t="Include" />
+            <e p="HandInstaller.cs" t="Include" />
+            <e p="HealthCalculator.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+            <e p="ResourceCacher.cs" t="Include" />
+            <e p="ResourceDownloader.cs" t="Include" />
+            <e p="TextureAssetDownloader.cs" t="Include" />
+            <e p="TextureCacher.cs" t="Include" />
+            <e p="TextureDataConfig.cs" t="Include" />
+            <e p="TextureLoader.cs" t="Include" />
+          </e>
+          <e p="Interfaces" t="Include">
+            <e p="IBoardDropManager.cs" t="Include" />
+            <e p="IBoardFightManager.cs" t="Include" />
+            <e p="ICard.cs" t="Include" />
+            <e p="ICardDropVerifier.cs" t="Include" />
+            <e p="ICardGenerator.cs" t="Include" />
+            <e p="IChangeAttack.cs" t="Include" />
+            <e p="IGameResourceHandler.cs" t="Include" />
+            <e p="IHand.cs" t="Include" />
+            <e p="IHandInstaller.cs" t="Include" />
+            <e p="IHaveAttack.cs" t="Include" />
+            <e p="IHaveHealth.cs" t="Include" />
+            <e p="IHaveInfo.cs" t="Include" />
+            <e p="IHaveMana.cs" t="Include" />
+            <e p="IHaveResource.cs" t="Include" />
+            <e p="IHealthCalculator.cs" t="Include" />
+            <e p="ILoadCardValue.cs" t="Include" />
+            <e p="IResourceCacher.cs" t="Include" />
+            <e p="IResourceDownloader.cs" t="Include" />
+            <e p="ITextureAssetDownloader.cs" t="Include" />
+            <e p="ITextureCacher.cs" t="Include" />
+            <e p="ITextureLoader.cs" t="Include" />
+          </e>
           <e p="ProjectInstaller.cs" t="Include" />
-          <e p="ResourceCacher.cs" t="Include" />
-          <e p="ResourceDownloader.cs" t="Include" />
-          <e p="TextureAssetDownloader.cs" t="Include" />
-          <e p="TextureCacher.cs" t="Include" />
-          <e p="TextureDataConfig.cs" t="Include" />
-          <e p="TextureLoader.cs" t="Include" />
+          <e p="UI" t="Include">
+            <e p="ArcContainer.cs" t="Include" />
+            <e p="ArcLayoutHandler.cs" t="Include" />
+            <e p="ArcLayoutWrapper.cs" t="Include" />
+            <e p="AttackView.cs" t="Include" />
+            <e p="CardView.cs" t="Include" />
+            <e p="Draggable.cs" t="Include" />
+            <e p="DropZone.cs" t="Include" />
+            <e p="HandVisualiser.cs" t="Include" />
+          </e>
           <e p="Utils" t="Include">
             <e p="CoroutineRunner.cs" t="Include" />
             <e p="ObservableData.cs" t="Include" />
+            <e p="TweenTask.cs" t="Include" />
+            <e p="VectorTweenTask.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">

@@ -1,9 +1,12 @@
-﻿using UnityEngine;
+﻿using Gameplay;
+using Interfaces;
+using UI;
+using UnityEngine;
 
 public class ProjectInstaller : MonoBehaviour
 {
     [SerializeField] private HandVisualiser handVisualiser;
-    [SerializeField] private BoardAttackController boardAttackController;
+    [SerializeField] private BoardActionsController boardActionsController;
 
     private IPlayer player;
     private IAttackCard attacker;
@@ -11,6 +14,8 @@ public class ProjectInstaller : MonoBehaviour
     private IHealthCalculator healthCalculator;
     private DummyConfigData dummyConfigData;
     private IBoardFightManager boardFightManager;
+    private IBoardDropManager boardDropManager;
+    private ICardDropVerifier cardDropVerifier;
 
     private void Awake()
     {
@@ -25,10 +30,12 @@ public class ProjectInstaller : MonoBehaviour
         healthCalculator = new HealthCalculator();
         cardGenerator = new CardGenerator(healthCalculator, dummyConfigData.dummyCardValueLoader,
             dummyConfigData.textureDataConfig);
-        player = new Player(cardGenerator);
+        player = new Player(cardGenerator, healthCalculator);
         attacker = new AttackCard();
         boardFightManager = new BoardFightManager(player.GetHand(), attacker);
+        boardDropManager = new BoardDropManager(player.GetHand());
+        cardDropVerifier = new CardDropVerifier();
         handVisualiser.Init(player.GetHand(), dummyConfigData.textureDataConfig);
-        boardAttackController.Init(boardFightManager, attacker);
+        boardActionsController.Init(boardFightManager, attacker, boardDropManager, cardDropVerifier);
     }
 }
